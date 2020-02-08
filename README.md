@@ -210,8 +210,8 @@
 |202| [What is slice pipe?](#what-is-slice-pipe)|
 |203| [What is index property in ngFor directive?](#what-is-index-property-in-ngfor-directive)|
 |204| [What is the purpose of ngFor trackBy?](#what-is-the-purpose-of-ngfor-trackby)|
-|205| [](#)|
-|206| [](#)|
+|205| [What is the purpose of ngSwitch directive?](#what-is-the-purpose-of-ngswitch-directive)|
+|206| [Is it possible to do aliasing for inputs and outputs?](#is-it-possible-to-do-aliasing-for-inputs-and-outputs)|
 |207| [](#)|
 |208| [](#)|
 |209| [](#)|
@@ -3102,11 +3102,22 @@
 
      **[⬆ Back to Top](#table-of-contents)**
 
-205. ### ?
+205. ### What is the purpose of ngSwitch directive?
+     **NgSwitch** directive is similar to JavaScript switch statement which displays one element from among several possible elements, based on a switch condition. In this case only the selected element placed into the DOM. It has been used along with `NgSwitch`, `NgSwitchCase` and `NgSwitchDefault` directives. For example, let's display the browser details based on selected browser using ngSwitch directive.
+     ```javascript
+     <div [ngSwitch]="currentBrowser.name">
+       <chrome-browser    *ngSwitchCase="'chrome'"    [item]="currentBrowser"></chrome-browser>
+       <firefox-browser   *ngSwitchCase="'firefox'"     [item]="currentBrowser"></firefox-browser>
+       <opera-browser     *ngSwitchCase="'opera'"  [item]="currentBrowser"></opera-browser>
+       <safari-browser     *ngSwitchCase="'safari'"   [item]="currentBrowser"></safari-browser>
+       <ie-browser  *ngSwitchDefault           [item]="currentItem"></ie-browser>
+     </div>
+     ```
 
      **[⬆ Back to Top](#table-of-contents)**
 
-206. ### ?
+206. ### Is it possible to do aliasing for inputs and outputs?
+     Yes, it is possible to do aliasing for inputs and outputs in two ways
 
      **[⬆ Back to Top](#table-of-contents)**
 
