@@ -792,6 +792,7 @@
     A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe. For example, any changes to a primitive input value (String, Number, Boolean, Symbol) or a changed object reference (Date, Array, Function, Object). An impure pipe is called for every change detection cycle no matter whether the value or parameters changes. i.e, An impure pipe is called often, as often as every keystroke or mouse-move.
 
      [Stack exmplanation](https://stackoverflow.com/questions/39285550/what-is-impure-pipe-in-angular) 
+
   **[⬆ Back to Top](#table-of-contents)**
 
 34. ### What is a bootstrapping module?
